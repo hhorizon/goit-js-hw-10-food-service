@@ -23,7 +23,7 @@ const inputRef = document.querySelector('.theme-switch__toggle');
 const bodyRef = document.querySelector('body');
 const labelRef = document.querySelector('.theme-switch__track');
 
-// defaultTheme();
+defaultTheme();
 
 inputRef.addEventListener('change', onThemeSwitcChange);
 
@@ -39,10 +39,10 @@ function onThemeSwitcChange() {
     localStorage.setItem('theme', bodyRef.classList.value);
 };
 
-// function defaultTheme() {
-//     bodyRef.classList.add(localStorage.getItem('theme'));
+function defaultTheme() {
+    bodyRef.classList.add(localStorage.getItem('theme'));
 
-//     if (localStorage.getItem('theme') === theme.DARK) {
-//        inputRef.checked = true; 
-//     };
-// }
+    // if (localStorage.getItem('theme') === theme.DARK) {
+    //    inputRef.checked = true; 
+    // };
+}
