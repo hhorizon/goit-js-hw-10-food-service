@@ -42,7 +42,7 @@ function onThemeSwitcChange() {
 function defaultTheme() {
     bodyRef.classList.add(localStorage.getItem('theme'));
 
-    // if (localStorage.getItem('theme') === theme.DARK) {
-    //    inputRef.checked = true; 
-    // };
+    if (localStorage.getItem('theme') === theme.DARK) {
+       inputRef.checked = true; 
+    };
 }
