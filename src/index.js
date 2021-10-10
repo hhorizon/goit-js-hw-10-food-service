@@ -36,7 +36,7 @@ function onThemeSwitcChange() {
         bodyRef.classList.add(theme.LIGHT);
     }
 
-    // localStorage.setItem('theme', bodyRef.classList.value);
+    localStorage.setItem('theme', bodyRef.classList.value);
 };
 
 // function defaultTheme() {
